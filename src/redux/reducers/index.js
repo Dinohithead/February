@@ -1,5 +1,7 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({
+import field from './Field'
 
+export default combineReducers({
+    field
 });
