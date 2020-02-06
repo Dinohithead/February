@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { setFieldSizeWidth, setFieldSizeHeight } from '../../redux/actions/Field';
 
-const Field = ({ fullScreen, type }) => {
+const Field = ({ fullScreen, type, ...props }) => {
     const dispatch = useDispatch();
 
     const windowWidth = window.innerWidth;
@@ -28,7 +28,8 @@ const Field = ({ fullScreen, type }) => {
                 height
             }}
         >
-            Canvas don't work in your browser
+            {/* Canvas don't work in your browser */}
+            {props.children}
         </canvas>
     )
 }

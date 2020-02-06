@@ -1,27 +1,27 @@
-import './_firTree.scss';
+import './_human.scss';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const FirTree = ({ x, y }) => {
+const Human = ({ x, y }) => {
     return (
-        <div 
-            className='firTree'
+        <div
+            id='human'
             style={{
                 left: x,
-                top:  y,
+                top: y
             }}
         />
     )
 }
 
-FirTree.propTypes = {
+Human.propTypes = {
     x: PropTypes.number,
     y: PropTypes.number
 }
 
-FirTree.defaultProps = {
+Human.defaulProps = {
     x: 0,
     y: 0
 }
 
-export default FirTree;
+export default Human
